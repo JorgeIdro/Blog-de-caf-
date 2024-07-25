@@ -39,7 +39,7 @@
     </header>
 
     <div class="contenedor contenido-principal">
-        <main class="Blog">
+        <main>
             <h3>Nuestro blog</h3>
 
             <article class="entrada">
@@ -51,7 +51,7 @@
 
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nam accusantium dolor ipsam fuga, excepturi cumque maiores harum optio modi molestias! Sed officiis dignissimos et vitae quaerat totam debitis recusandae.</p>
 
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton">Leer Entrada</a>
                 </div>
             </article>
 
@@ -64,7 +64,7 @@
 
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nam accusantium dolor ipsam fuga, excepturi cumque maiores harum optio modi molestias! Sed officiis dignissimos et vitae quaerat totam debitis recusandae.</p>
 
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton">Leer Entrada</a>
                 </div>
             </article>
 
@@ -77,18 +77,58 @@
 
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat nam accusantium dolor ipsam fuga, excepturi cumque maiores harum optio modi molestias! Sed officiis dignissimos et vitae quaerat totam debitis recusandae.</p>
 
-                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton">Leer Entrada</a>
                 </div>
             </article>
         </main>
 
-        <aside class="sidebar">
+        <aside>
             <h3>Nuestros cursos y talleres</h3>
+
+            <ul class="cursos no-padding">
+                <li class="widget-cursos">
+                    <h4>Técnica de extracción de café</h4>
+                    
+                    <p class="widget-cursos__label">Cupo: <span class="widget-cursos__info">20</span></p>
+                    <p class="widget-cursos__label">Precio: <span class="widget-cursos__info">Gratis</span></p>
+                    <a href="entrada.html" class="boton boton--primario">Más información</a>
+                </li>
+            </ul>
+
+            <ul class="cursos no-padding">
+                <li class="widget-cursos">
+                    <h4>4 Recetas de café para principiantes</h4>
+                    <p class="widget-cursos__label">Precio: <span class="widget-cursos__info">Gratis</span></p>
+                    <p class="widget-cursos__label">Cupo: <span class="widget-cursos__info">20</span></p>
+                    <a href="entrada.html" class="boton boton--primario">Más información</a>
+                </li>
+            </ul>
+
+            <div class="sidebar--borde">
+                
+            </div>
+            
+            <div>
+                
+            </div>
         </aside>
     </div>
 
-    <footer>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="header__barra">
+                <a class="logo" href="index.html">
+                    <h1 class="no-margin logo__titulo centrar-texto">Blog<span class="logo__titulo--span">DeCafé</span></h1>
+                </a>
 
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Curso</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>    
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>
