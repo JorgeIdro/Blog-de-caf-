@@ -140,6 +140,10 @@ img {
     font-weight: 700;
     height: 6rem;
     text-align: center;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
 }
 @media (min-width: 768px) {
     .boton {
@@ -176,4 +180,64 @@ img {
 .footer {
     background-color: var(--negro);
     padding: 3rem 3rem 2rem;
+}
+
+/* Contacto */
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.formulario {
+    background-color: var(--blanco);
+    margin: -5rem auto 0;
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.campo__label {
+    flex: 0 0 8rem;
+    text-align: end;
+}
+.campo__field {
+    flex: 1; /* para que tome todo el espacio disponible ya que el label tiene 0 en su factor de crecimiento */
+    border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+.boton--input {
+    width: 15rem;
+}
+.boton--derecha {
+    margin-left: auto;
+}
+@media (max-width: 767px) {
+    .formulario {
+        padding: 2rem;
+    }
+    .boton--derecha {
+        margin: 0;
+    }
+    .boton--input {
+        width: 100%;
+    }
+    .campo {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        gap: 0;
+    }
+    .campo__label {
+        text-align: left;
+    }
+    .campo__label,
+    .campo__field {
+        flex: 1;
+    }
 }
