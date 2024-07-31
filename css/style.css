@@ -71,8 +71,13 @@ img {
 
 /* Header */
 
-.header {
+.webp .header { /*si soporta webp lo cargara*/
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header {/*si no lo soporta no lo cargara*/
     background-image: url(../img/banner.jpg);
+}
+.header {
     height: 60rem;
     background-size: cover; /*Cambia el tamaño de la imagen para cubrir espacios*/
     background-repeat: no-repeat;
