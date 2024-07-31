@@ -28,6 +28,11 @@ body{
     width: 90%;
     margin: 0 auto;
 }
+@media (min-width: 768px) {
+    .contenedor {
+        width: 80%;
+    }
+}
 a {
     text-decoration: none;
 }
@@ -121,9 +126,9 @@ img {
 }
 
 .entrada {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border-bottom: .1rem solid var(--gris);
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .entrada:last-of-type {
     border: none;
@@ -241,3 +246,44 @@ img {
         flex: 1;
     }
 }
+
+/* Sobre Nosotros y Cursos */
+
+.sobre-nosotros,
+.entrada-blog {
+    margin-bottom: 4rem;
+}
+/* .sobre-nosotros__imagen {
+    width: 100%;
+} */
+
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+    }
+    .curso__imagen1 {
+        background-size: cover;
+        background-position: center center;
+    }
+    .curso__imagen,
+    .sobre-nosotros__imagen {
+        width: 100%;
+        height: auto;
+    }
+    @supports(object-fit: cover) {/*redimensiona la imagen o video para que se ajuste a la caja*/
+        .curso__imagen,
+        .sobre-nosotros__imagen {
+            height: 100%;
+            object-fit: cover; /*la imagen llenara todo el espacio y se cortara en caso de ser necesario*/
+            object-position: center center; /*si se corta mostrara el centro*/
+        }
+    }
+}
+
