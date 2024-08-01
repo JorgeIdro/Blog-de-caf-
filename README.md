@@ -20,8 +20,8 @@
 
 # Tecnologías usadas para este proyecto
 
-<p>
-HTML para la estructura de la pagina
-Css para dar estilo a la pagina
-Javascript en el plugin que descargue en "Modernizr" para imágenes webp el cual permite que están se muestren en caso de ser soportados por el navegador y si no es soportado usara la imagen de formato jpg
-</p>
+<p>HTML para la estructura de la pagina</p>
+
+<p>Css para dar estilo a la pagina</p>
+
+<p>Javascript en el plugin que descargue en "Modernizr" para imágenes webp el cual permite que están se muestren en caso de ser soportados por el navegador y si no es soportado usara la imagen de formato jpg</p>
